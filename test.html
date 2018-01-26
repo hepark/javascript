@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NexCoin-계좌</title>
+    <link rel="stylesheet" href="css/ubms.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="wrap_in">
+		<section class="notice_bar">
+			<a href="#"><strong>공지 [점검]</strong>순위집계 관계로 0시~04시까지 서버점검합니다.</a>
+		</section>
+	    <section class="section_container">
+	    	<div class="tab_menu">
+		    	<ul class="tab_btn tab_type1">
+		    		<li class="on"><a href="#">자산현황</a></li>
+		    		<li><a href="#">거래내역</a></li>
+		    		<li><a href="#">미체결내역</a></li>
+		    	</ul>
+	    	</div>
+	    	<div class="tab_contents">
+	    		<!-- 자산현황 -->
+	    		<!-- //자산현황 -->
+	    	</div>
+	    	<div class="tab_contents">
+	    		<!-- 거래내역 -->
+	    		<div class="box_line">
+		            <div class="top_area">
+		                <h1 class="tit01">거래내역</h1>
+	                    <div class="dmenu_area">
+			                <a href="#dmenu1" class="bt bt_grid dmenu_bt"><i class="ic ic_cal"></i>기간검색</a>
+	                        <ul id="dmenu1" class="dmenu">
+	                        	<li><a href="#">7일</a></li>
+	                        	<li><a href="#">15일</a></li>
+	                        	<li><a href="#">30일</a></li>
+	                        </ul>
+	                    </div>
+		            </div>
+	                <div class="term_area">
+		                <p class="term">
+		                	<span class="date">2018.01.21 - 2018.01.28</span>
+		                	<span class="date_txt"><em id="result-txt">7일</em>간의 검색 결과값 입니다.</span>
+		                </p>
+	                </div>
+		            <table class="tbl_a">
+		                <thead>
+		                    <tr>
+		                        <th rowspan="2">주문시간</th>
+		                        <th class="tal">코인</th>
+		                        <th class="tar">거래수량</th>
+		                        <th class="tar">거래금액</th>
+		                    </tr>
+		                    <tr>
+		                        <th class="tal">거래종류</th>
+		                        <th class="tar">주문단가</th>
+		                        <th class="tar">수수료</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-btc">
+			                            <span>BTC</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_buy">매수</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+	            </div>
+	    		<!-- //거래내역 -->
+	    	</div>
+	    	<div class="tab_contents">
+	    		<!-- 미체결내역 -->
+	    		<div class="box_line">
+		            <div class="top_area">
+		                <h1 class="tit01">미체결내역</h1>
+		                <a href="#" class="bt bt_grid"><i class="ic ic_cal"></i>기간검색</a>
+		            </div>
+	                <div class="term_area">
+		                <p class="term">
+		                	<span class="date">2018.01.21 - 2018.01.28</span>
+		                	<span class="date_txt">7일간의 검색 결과값 입니다.</span>
+		                </p>
+	                </div>
+		            <table class="tbl_a">
+		                <thead>
+		                    <tr>
+		                        <th rowspan="2">주문시간</th>
+		                        <th class="tal">코인</th>
+		                        <th class="tar">거래수량</th>
+		                        <th class="tar">거래금액</th>
+		                    </tr>
+		                    <tr>
+		                        <th class="tal">거래종류</th>
+		                        <th class="tar">주문단가</th>
+		                        <th class="tar">수수료</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk1">
+		                                <label for="chk1"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-btc">
+			                            <span>BTC</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_buy">매수</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk2">
+		                                <label for="chk2"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-eth">
+			                            <span>ETH</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_buy">매수</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk3">
+		                                <label for="chk3"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-qtum">
+			                            <span>QTUM</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_buy">매수</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk4">
+		                                <label for="chk4"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-btc">
+			                            <span>BTC</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_sell">매도</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk5">
+		                                <label for="chk5"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-eth">
+			                            <span>ETH</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_sell">매도</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td rowspan="2" class="td_time">
+		                            <span class="checkbox">
+		                                <input type="checkbox" id="chk6">
+		                                <label for="chk6"></label>
+		                            </span>
+		                        	<span class="time">
+		                        		<span>2018</span>
+		                        		<span>01/25</span>
+		                        		<em>12:35:56</em>
+		                        	</span>
+		                        </td>
+		                        <td>
+			                        <i class="fa fa-qtum">
+			                            <span>QTUM</span>
+			                        </i>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>0.3</em>
+		                        		<i>BTC</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>1,900,000</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="txt_sell">매도</td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>198,000,000,000 </em>
+		                        		<i>KRW</i>
+		                        	</span>
+		                        </td>
+		                        <td>
+		                        	<span class="amt1">
+		                        		<em>950</em>
+		                        	</span>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+	            </div>
+	    		<!-- //미체결내역 -->
+	    	</div>
+	    </section>
+    </div>
+    <section class="quick">
+    	<ul>
+    		<li class="qmn1"><a href="#"><span>거래소</span></a></li>
+    		<li class="qmn2 on"><a href="#"><span>계좌</span></a></li>
+    		<li class="qmn3"><a href="#"><span>차트</span></a></li>
+    		<li class="qmn4"><a href="#"><span>랭킹</span></a></li>
+    		<li class="qmn5"><a href="#"><span>내정보</span></a></li>
+    	</ul>
+    </section>
+</div>
+</body>
+
+</html>
